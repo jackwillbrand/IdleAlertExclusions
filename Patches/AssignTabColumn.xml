@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+  <Operation Class="PatchOperationConditional">
+    <xpath>Defs/PawnTableDef[defName="Assign"]/columns/li[text()="RemainingSpace"]</xpath>
+    <match Class="PatchOperationInsert">
+      <xpath>Defs/PawnTableDef[defName="Assign"]/columns/li[text()="RemainingSpace"]</xpath>
+      <order>Prepend</order>
+      <value>
+        <li>IdleAlertCounted</li>
+      </value>
+    </match>
+    <nomatch Class="PatchOperationAdd">
+      <xpath>Defs/PawnTableDef[defName="Assign"]/columns</xpath>
+      <value>
+        <li>IdleAlertCounted</li>
+      </value>
+    </nomatch>
+  </Operation>
+
+</Patch>

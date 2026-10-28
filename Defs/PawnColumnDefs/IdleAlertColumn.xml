@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <PawnColumnDef>
+    <defName>IdleAlertCounted</defName>
+    <workerClass>IdleAlertExclusions.PawnColumnWorker_IdleAlert</workerClass>
+    <headerIcon>UI/Icons/ColonistBar/Idle</headerIcon>
+    <headerTip>Idle alert\n\nChecked colonists count toward the "colonists idle" alert on the right side of the screen. Uncheck a colonist to leave them out of it.</headerTip>
+    <sortable>true</sortable>
+    <paintable>true</paintable>
+  </PawnColumnDef>
+
+</Defs>
